@@ -132,7 +132,7 @@ video_bytes = video_file.read()
 st.video(video_bytes)
 '''
 
-st.code2(code2, language='python')
+st.code(code2, language='python')
 
 
 
@@ -153,4 +153,4 @@ st.bar_chart(df['2021年'])
 
 '''
 
-st.code3(code3, language='python')
+st.code(code3, language='python')
