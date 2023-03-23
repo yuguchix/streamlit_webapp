@@ -3,10 +3,6 @@ import streamlit as st
 st.subheader('main_app.py')
 code_main = '''
 import streamlit as st
-
-st.subheader('main_app.py')
-code_main = '''
-import streamlit as st
 from PIL import Image
 
 
@@ -25,8 +21,16 @@ st.video(video_bytes)
 
 st.code_main(code_main, language='python')
 
-st.subheader('main_app.py')
+
+##############################################################
+
+
+st.subheader('page1.py')
 code1 = '''
+import streamlit as st
+
+st.subheader('main_app.py')
+code_main = \'\'\'
 import streamlit as st
 from PIL import Image
 
@@ -42,12 +46,26 @@ st.subheader('七面山崩落個所')
 video_file = open('data/shichimen.mp4', 'rb')
 video_bytes = video_file.read()
 st.video(video_bytes)
-'''
+\'\'\'
+
+##############################################################
+
+
+st.code_main(code_main, language='python')
+
+st.subheader('page1.py')
+code1 = \'\'\'
+
+\'\'\'
 
 st.code1(code1, language='python')
 
-st.subheader('main_app.py')
-code2 = '''
+
+##############################################################
+
+
+st.subheader('page2.py')
+code2 = \'\'\'
 import streamlit as st
 from PIL import Image
 
@@ -63,12 +81,16 @@ st.subheader('七面山崩落個所')
 video_file = open('data/shichimen.mp4', 'rb')
 video_bytes = video_file.read()
 st.video(video_bytes)
-'''
+\'\'\'
 
 st.code2(code2, language='python')
 
-st.subheader('main_app.py')
-code3 = '''
+
+
+###############################################################
+
+st.subheader('page3.py')
+code3 = \'\'\'
 import streamlit as st
 import pandas as pd
 
@@ -80,35 +102,18 @@ st.subheader('2021年気温')
 st.bar_chart(df['2021年'])
 
 
-'''
+\'\'\'
 
 st.code3(code3, language='python')
 '''
 
-st.code_main(code_main, language='python')
-
-st.subheader('main_app.py')
-code1 = '''
-import streamlit as st
-from PIL import Image
-
-
-st.title("WEBAPP TEST")
-st.caption('Streamlibで作ったテストアプリ')
-
-st.subheader('敬慎院からの富士山')
-image = Image.open('data/aka_fuji.jpg')
-st.image(image, width=200)
-
-st.subheader('七面山崩落個所')
-video_file = open('data/shichimen.mp4', 'rb')
-video_bytes = video_file.read()
-st.video(video_bytes)
-'''
-
 st.code1(code1, language='python')
 
-st.subheader('main_app.py')
+
+##############################################################
+
+
+st.subheader('page2.py')
 code2 = '''
 import streamlit as st
 from PIL import Image
@@ -129,7 +134,11 @@ st.video(video_bytes)
 
 st.code2(code2, language='python')
 
-st.subheader('main_app.py')
+
+
+###############################################################
+
+st.subheader('page3.py')
 code3 = '''
 import streamlit as st
 import pandas as pd
