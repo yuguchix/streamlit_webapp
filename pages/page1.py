@@ -107,7 +107,7 @@ st.bar_chart(df['2021年'])
 st.code3(code3, language='python')
 '''
 
-st.code1(code1, language='python')
+st.code(code1, language='python')
 
 
 ##############################################################
