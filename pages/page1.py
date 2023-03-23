@@ -19,7 +19,7 @@ video_bytes = video_file.read()
 st.video(video_bytes)
 '''
 
-st.code_main(code_main, language='python')
+st.code(code_main, language='python')
 
 
 ##############################################################
