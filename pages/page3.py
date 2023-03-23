@@ -1,9 +1,6 @@
 import streamlit as st
 import pandas as pd
-# import matplotlib.pyplot as plt
-import matplotlib as plt
-
-
+import matplotlib.pyplot as plt
 
 df = pd.read_csv('data/平均気温.csv', index_col='月')
 # st.dataframe(df)
